@@ -1,6 +1,6 @@
 {
     "name": "filestore-json",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Easily sync JSON objects of any shape with the filesystem.",
     "main": "lib/",
     "types": "lib/",
