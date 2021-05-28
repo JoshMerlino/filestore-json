@@ -6,6 +6,17 @@
     "types": "lib/",
     "author": "Josh Merlino",
     "license": "ISC",
+	"repository": {
+        "type": "git",
+        "url": "git+https://github.com/JoshMerlino/filestore-json.git"
+    },
+	"keywords": [
+        "filestore",
+        "persistant",
+        "json",
+        "json-config",
+        "filesystem"
+    ],
     "scripts": {
         "watch-ts": "tsc -w",
         "build": "tsc",
