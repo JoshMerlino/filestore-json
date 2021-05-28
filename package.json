@@ -1,29 +1,31 @@
 {
-    "name": "ts-package",
-    "version": "1.0.27",
-    "description": "Easily create Typescript node.js packages from this boilerplate",
-    "main": "lib/index.js",
+    "name": "filestore-json",
+    "version": "1.0.0",
+    "description": "Easily sync JSON objects of any shape with the filesystem.",
+    "main": "lib/",
+    "types": "lib/",
     "author": "Josh Merlino",
     "license": "ISC",
     "scripts": {
         "watch-ts": "tsc -w",
-        "watch-js": "nodemon .",
-        "dev": "concurrently \"npm:watch-*\"",
-        "start": "node .",
-        "build": "tsc"
+        "build": "tsc",
+        "test": "jest",
+		"prepare": "npm run build && npm test"
     },
     "devDependencies": {
+        "@types/jest": "^26.0.23",
+        "@types/mkdirp": "^1.0.1",
         "@types/node": "^15.6.1",
         "@typescript-eslint/eslint-plugin": "^4.25.0",
         "@typescript-eslint/parser": "^4.25.0",
-        "eslint": "^7.27.0",
         "concurrently": "^6.2.0",
-        "eslint-react": "0.0.4",
-        "nodemon": "^2.0.7",
+        "eslint": "^7.27.0",
+        "jest": "^27.0.1",
+        "ts-jest": "^27.0.1",
         "typescript": "^4.3.2",
         "typescript-eslint": "0.0.1-alpha.0"
     },
     "dependencies": {
-        "dotenv": "^10.0.0"
+        "mkdirp": "^1.0.4"
     }
 }

@@ -1,4 +1,11 @@
+.git/
+.github/
 node_modules/
+.eslintignore
+.eslintrc.yml
+.gitignore
 src/
-.env
-*.js.map
+test/
+jest.config.js
+README.md
+tsconfig.json
