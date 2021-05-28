@@ -1,16 +1,22 @@
 name: NPM Publish
 
-on:
-  release:
-    types: # This configuration does not affect the page_build event above
-      - created
-      - published
+on: push
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      # This step will retry until required check passes
+      # and will fail the whole workflow if the check conclusion is not a success
+      - name: Wait on tests
+        # or lewagon/wait-on-check-action@master, but master is not guaranteed to be stable ATM
+        uses: lewagon/wait-on-check-action@v0.2
+        with:
+          ref: master # can be commit SHA or tag too
+          check-name: test # name of the existing check - omit to wait for all checks
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          wait-interval: 20 # seconds
       - uses: actions/setup-node@v1
         with:
           node-version: 14
