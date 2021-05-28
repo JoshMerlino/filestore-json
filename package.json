@@ -1,6 +1,6 @@
 {
     "name": "filestore-json",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Easily sync JSON objects of any shape with the filesystem.",
     "main": "lib/",
     "types": "lib/",
@@ -10,7 +10,7 @@
         "watch-ts": "tsc -w",
         "build": "tsc",
         "test": "jest",
-		"prepare": "npm run build && npm test"
+        "prepare": "npm run build && npm test"
     },
     "devDependencies": {
         "@types/jest": "^26.0.23",
