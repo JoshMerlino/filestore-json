@@ -2,6 +2,10 @@
 [![Test CI](https://github.com/JoshMerlino/filestore-json/actions/workflows/test.yml/badge.svg)](https://github.com/JoshMerlino/filestore-json/actions/workflows/test.yml)
 [![CodeQL](https://github.com/JoshMerlino/filestore-json/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/JoshMerlino/filestore-json/actions/workflows/codeql-analysis.yml)
 
+![](https://img.shields.io/npm/dt/filestore-json)
+![](https://img.shields.io/github/issues/JoshMerlino/filestore-json)
+![](https://img.shields.io/github/issues-pr/JoshMerlino/filestore-json)
+
 ## Creating a store
 ```ts
 import JSONStore from "filestore-json";
