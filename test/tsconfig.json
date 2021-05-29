@@ -16,10 +16,5 @@
 		"preserveConstEnums": false,
 		"resolveJsonModule": true,
 		"declaration": true
-	},
-	"exclude": [
-		"node_modules",
-		"test",
-		"lib"
-	]
+	}
 }
