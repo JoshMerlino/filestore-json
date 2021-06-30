@@ -2,7 +2,7 @@ import { PathLike, statSync, writeFileSync } from "fs";
 import { sync as mkdirp } from "mkdirp";
 import { resolve } from "path";
 
-export default class Store<T extends Record<string, unknown> = Record<string, never>> {
+export default class Store<T = Record<string, never>> {
 
 	// Private symbol to ensure class is initialized properly.
 	private static __class = Symbol("Store");
@@ -32,7 +32,7 @@ export default class Store<T extends Record<string, unknown> = Record<string, ne
 	}
 
 	// Static method to create a new store from a file.
-	static from<T extends Record<string, unknown>>(path: PathLike, defaults?: T): Store<T> {
+	static from<T>(path: PathLike, defaults?: T): Store<T> {
 
 		// Make sure the parent folder of the store exists, if not create it.
 		mkdirp(resolve(path.toString(), "../"));
