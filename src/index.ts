@@ -39,20 +39,10 @@ export default class Store<T = Record<string, never>> {
 		// Monitor file for changes
 		watchFile(path, () => {
 
-			// Get new content
-			const newValue: T = { ...defaults, ...require(path) };
-
-			// Check if the content changed at all
-			if (!Store.deepEquals(newValue, this.__internalValue)) {
-
-				// Update internal value with new value
-				this.__internalValue = newValue;
-			}
+			// Update internal value with new value
+			this.__internalValue = { ...defaults, ...require(path) };
 
 		});
-
-		// On process clear
-		process.on("beforeExit", () => unwatchFile(path));
 
 	}
 
@@ -71,11 +61,6 @@ export default class Store<T = Record<string, never>> {
 		// Rethrn new Store.
 		return new this(path.toString(), defaults, Store.__classIdentifier);
 
-	}
-
-	// Helper method to check deep equality
-	private static deepEquals(obj1: any, obj2: any): boolean {
-		return JSON.stringify(obj1) === JSON.stringify(obj2);
 	}
 
 	// Clear the store and reset to the default value
