@@ -5,7 +5,7 @@
     "main": "lib/",
     "types": "lib/",
     "author": "Josh Merlino",
-    "license": "ISC",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/JoshMerlino/filestore-json.git"
