@@ -12,5 +12,5 @@ test("Ensure the value is updated when the store file changes.", () => {
 	writeFileSync(path.resolve("./test/watch.store.json"), JSON.stringify({ test: false }));
 	setTimeout(function() {
 		expect(JSON.stringify(store.value)).toBe(JSON.stringify({ test: false }));
-	}, 1000);
+	}, 5000);
 });
