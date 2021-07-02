@@ -1,6 +1,9 @@
 # filestore-json
-[![Test CI](https://github.com/JoshMerlino/filestore-json/actions/workflows/test.yml/badge.svg)](https://github.com/JoshMerlino/filestore-json/actions/workflows/test.yml)
-[![CodeQL](https://github.com/JoshMerlino/filestore-json/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/JoshMerlino/filestore-json/actions/workflows/codeql-analysis.yml)
+### Checks
+* [![Build](https://github.com/JoshMerlino/filestore-json/actions/workflows/build.yml/badge.svg)](https://github.com/JoshMerlino/filestore-json/actions/workflows/build.yml)
+* [![Code Quality Analysis](https://github.com/JoshMerlino/filestore-json/actions/workflows/code-quality-analysis.yml/badge.svg)](https://github.com/JoshMerlino/filestore-json/actions/workflows/code-quality-analysis.yml)
+* [![Code Style Analysis](https://github.com/JoshMerlino/filestore-json/actions/workflows/code-style-analysis.yml/badge.svg)](https://github.com/JoshMerlino/filestore-json/actions/workflows/code-style-analysis.yml)
+* [![Test CI](https://github.com/JoshMerlino/filestore-json/actions/workflows/test-ci.yml/badge.svg)](https://github.com/JoshMerlino/filestore-json/actions/workflows/test-ci.yml)
 
 ![](https://img.shields.io/npm/dt/filestore-json)
 ![](https://img.shields.io/github/issues/JoshMerlino/filestore-json)
