@@ -37,7 +37,7 @@ export default class Store<T = Record<string, never>> {
 		}
 
 		// Monitor file for changes
-		watchFile(path, () => {
+		watchFile(path, { persistent: false }, () => {
 
 			// Update internal value with new value
 			this.__internalValue = { ...defaults, ...require(path) };
