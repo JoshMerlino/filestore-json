@@ -39,8 +39,6 @@ export default class Store<T = Record<string, never>> {
 		// Monitor file for changes
 		watchFile(path, () => {
 
-			console.log("file updated");
-
 			// Get new content
 			const newValue: T = { ...defaults, ...require(path) };
 
