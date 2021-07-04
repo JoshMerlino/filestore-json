@@ -9,6 +9,8 @@
 ![](https://img.shields.io/github/issues/JoshMerlino/filestore-json)
 ![](https://img.shields.io/github/issues-pr/JoshMerlino/filestore-json)
 
+Easily sync JSON objects of any shape with the filesystem.
+
 ## Creating a store
 ```ts
 import JSONStore from "filestore-json";
