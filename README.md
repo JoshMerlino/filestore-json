@@ -11,6 +11,16 @@
 
 Easily sync JSON objects of any shape with the filesystem.
 
+# Features
+* Read & write to JSON files on a storage device without the need to interact with the filesystem.
+* Persistant data between process restarts.
+* Ability to determine age (ms since last write).
+* Cache JSON responses from network requests.
+* Automaticly updates internal value when JSON file is modified.
+* Strong type internal value with type annotations.
+
+# Examples
+
 ## Creating a store
 ```ts
 import JSONStore from "filestore-json";
@@ -18,6 +28,10 @@ import path from "path";
 
 // Initialize the store.
 const store = JSONStore.from(path.resolve("path/to/your/store.json"));
+
+// With types
+type Type = Record<string, any>;
+const store = JSONStore.from<Type>(path.resolve("path/to/your/store.json"));
 ```
 
 ## Reading & writing to the store
@@ -50,7 +64,7 @@ store.value = { myObject: false };
 console.log(store.value); // -> { myObject: false, defaultValue: true }
 ```
 
-## Resetting a stores value
+## Resetting a stores value back to the default
 ```ts
 // Update store value.
 store.value = { myObject: false };
