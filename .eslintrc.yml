@@ -14,6 +14,7 @@ parserOptions:
   ecmaVersion: 12
   sourceType: module
 
+
 extends:
   - plugin:@typescript-eslint/recommended
 
@@ -21,7 +22,6 @@ rules:
   for-direction: error
   getter-return: error
   no-compare-neg-zero: error
-  no-undef: warn
   no-cond-assign: error
   no-constant-condition: warn
   no-control-regex: error
@@ -92,7 +92,6 @@ rules:
   wrap-iife: error
   yoda: warn
   strict: error
-  no-use-before-define: error
   array-bracket-spacing: [warn, always]
   brace-style: warn
   camelcase: warn
@@ -120,7 +119,7 @@ rules:
   no-inline-comments: warn
   no-lonely-if: warn
   no-multi-assign: warn
-  no-multiple-empty-lines: warn
+  no-multiple-empty-lines: [warn, { max: 1, maxEOF: 0 }]
   no-new-object: warn
   no-trailing-spaces: warn
   no-unneeded-ternary: warn

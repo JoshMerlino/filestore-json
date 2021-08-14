@@ -1,4 +1,4 @@
-node_modules/
 lib/
 test/*.json
 !test/tsconfig.json
+node_modules/
