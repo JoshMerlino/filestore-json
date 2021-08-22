@@ -42,7 +42,7 @@
         "allowUnreachableCode": false,
         "preserveConstEnums": false,
         "resolveJsonModule": false,
-        "declaration": false
+        "declaration": true
     },
     "exclude": [
         "node_modules"
