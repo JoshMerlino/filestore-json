@@ -37,6 +37,6 @@
         "typescript-eslint": "0.0.1-alpha.0"
     },
     "dependencies": {
-        "mkdirp": "^1.0.4"
+        "mkdirp": "^2.0.0"
     }
 }
